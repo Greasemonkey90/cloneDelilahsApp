@@ -1,28 +1,16 @@
 package com;
 
-import android.app.Activity;
-import android.app.job.JobScheduler;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Layout;
 import android.util.Log;
-import android.util.TimeUtils;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 import com.bunny.android.delilahsapp.R;
-import com.bunny.android.theProblem;
-
-import org.w3c.dom.Text;
 
 
 public class calculating extends AppCompatActivity {

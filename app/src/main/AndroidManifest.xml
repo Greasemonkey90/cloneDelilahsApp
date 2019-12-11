@@ -18,7 +18,7 @@
         </activity>
 
 
-        <activity android:name="com.bunny.MainActivity">
+        <activity android:name="com.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW"/>
@@ -27,7 +27,7 @@
             </intent-filter>
 
         </activity>
-        <receiver android:name = "com.bunny.android.Alarm"  android:enabled="true">
+        <receiver android:name = "com.Alarm"  android:enabled="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
