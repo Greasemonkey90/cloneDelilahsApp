@@ -30,7 +30,7 @@ public class calculating extends AppCompatActivity {
     String answer;
 
     public void showEverything(){
-        whichGrade = null;
+        //whichGrade = null;
         guess = null;
         answer = null;
         theTest();
@@ -39,8 +39,15 @@ public class calculating extends AppCompatActivity {
 
     }
     public void theTest(){
-        whichGrade = decision.firstGradeAddition();
-        answer = decision.gettingAnswer();
+        whichGrade = decision.test();
+        System.out.println(whichGrade);
+        if(whichGrade.contains("+")){
+            answer = decision.gettingSum();
+        }
+        else{
+            answer = decision.gettingDifference();
+        }
+
     }
 
 
@@ -82,7 +89,7 @@ public class calculating extends AppCompatActivity {
                 checkingAnswer();
                 if (isRight == 2) {
                     TextView test22 = findViewById(R.id.testing2);
-                    test22.setText("GOOD JOB!");
+                    test22.setText(R.string.right_answer);
                     theLastOne();
                 }
                                  }
